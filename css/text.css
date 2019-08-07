@@ -1,0 +1,20 @@
+@media only screen and (width: 320px) {
+  html {
+    font-size: 16;
+  }
+}
+@media only screen and (width: 375px) {
+  html {
+    font-size: 18.75;
+  }
+}
+@media only screen and (width: 768px) {
+  html {
+    font-size: 38.4;
+  }
+}
+@media only screen and (width: 1024px) {
+  heml {
+    font-size: 51.2;
+  }
+}

@@ -1,0 +1,257 @@
+//   分成20份
+  @size:20;
+//    设备宽分为20份
+  @dx:640 / @size;
+
+//    头部导航
+   .top{
+       width: 100%;
+       background-color: #ccc;
+       height: 70rem / @dx;
+       display: flex;
+       justify-content: space-between;
+       line-height: 70rem / @dx;
+       position: relative;
+       .top-right img {
+         width: 40rem / @dx;
+ }
+         .top-left::after{
+             content: "";
+             display: block;
+             width: 0;
+             height: 0;
+             border: 20rem/ @dx solid #ccc;
+             border-top: 20rem / @dx solid #d3079e;
+             transform: translateY(-50%);
+             position: absolute;
+             top: 50rem / @dx;
+             left: 50rem / @dx;
+        
+       }
+
+   }
+
+//    广告区域
+  .banner{
+      width: 100%;
+      position: relative;
+      img {
+          width: 100%;
+      }  
+      .yuan span {
+        width: 20rem / @dx;
+        height: 20rem / @dx;
+        border-radius: 50%;
+        display: inline-block;
+        background-color:rgba(0,0,0,.5); 
+        margin-right: 10rem / @dx;
+  }
+  .yuan span:hover{
+      background-color: orange;
+  }
+      .yuan{
+          position: absolute;
+          left: 50%;
+          bottom: 40rem / @dx;  
+      }
+   }
+
+
+//    门票区域
+ .cars{
+     width: 100%;
+     margin-top: 20rem / @dx;
+     .cars-1{
+      width: 32%;
+      float: left;
+         margin-left: 5rem /@dx;
+         margin-top: 10rem / @dx;
+         img{
+             width: 100%;
+         }
+     }
+ }
+
+//  签证区域
+.middle {
+    width: 100%;
+    border-top: 1rem / @dx solid #ccc;
+    border-bottom: 1rem / @dx solid #ccc;
+    margin-top: 10rem / @dx;
+   
+    .middle-top{
+        width: 24%;
+        border-right: 1rem /@dx solid #ccc;
+        float: left;
+        img{
+            width: 100%;
+        }
+    }
+    .middle-top1{
+        width: 24%;
+        border-right: 1rem /@dx solid #ccc;
+        float: left;
+
+        img{
+            width: 100%;
+        }
+    }
+    .middle-top2{
+        width: 24%;
+        border-right: 1rem /@dx solid #ccc;
+        float: left;
+        img{
+            width: 100%;
+        }
+    }
+    .middle-top3{
+        width: 24%;
+        float: left;
+        img{
+            width: 100%;
+        }
+    }
+    .middle-top4{
+        width: 24%;
+        float: left;
+        border-right: 1rem / @dx solid #ccc;
+        img{
+            width: 100%;
+        }
+    }
+    .middle-top5{
+        width: 24%;
+        float: left;
+        border-right: 1rem / @dx solid #ccc;
+        img{
+            width: 100%;
+        }
+    }
+    .middle-top6{
+        width: 24%;
+        float: left;
+        border-right: 1rem / @dx solid #ccc;
+        img{
+            width: 100%;
+        }
+    }
+    .middle-top7{
+        width: 24%;
+        float: left;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+// 亲情活动
+  .lq{
+      width: 100%;
+      margin-top: 10rem / @dx;
+      border-bottom: 1rem / @dx solid #ccc;
+      .lq-img{
+          width: 50%;
+          float: left;
+          img{
+              width: 100%;
+          }
+      }
+      .lq-right{
+          width: 50%;
+          float: left;
+          .lq-r img{
+              width: 100%;
+          }
+          .lq-r{
+            border-bottom: 2rem / @dx solid #dedede;
+          }
+          .lq-g img{
+              width: 100%;
+          }
+          .lq-g{
+            border-bottom: 2rem / @dx solid #dedede;
+          }
+      }
+  }
+
+
+   //热门活动
+   .re {
+       width: 100%;
+       height: 50rem / @dx;
+       background-color: #dedede;
+       margin-top: 10rem / @dx;
+      line-height: 50rem / @dx;
+      padding-left: 20rem / @dx;
+      box-sizing: border-box;
+   }
+
+//    景点门票
+  .jpg{
+      width: 100%;
+      .jpg1{
+          width: 100%;
+         
+          img {
+              width: 100%;
+           
+          }
+      }
+  }
+
+//    度周末
+   .du {
+       width: 100%;
+       margin-top: 30rem / @dx;
+       background-color: #dedede;
+       .du1{
+           width: 100%;
+          ul{
+              display: flex;
+              justify-content: space-around;
+              padding-top: 30rem / @dx;
+          }
+         a{
+             color: black;
+         }
+            
+            li a:hover{
+                color: red;
+                border-bottom: 1px solid red;
+            }
+       }
+       .du2{
+           width: 100%;
+           img{
+               width: 100%;
+           }
+       }
+       .du3{
+           width: 100%;
+       }
+   }
+
+
+   .cha {
+       width: 100%;
+       text-align: center;
+   }
+
+   .mi{
+       width: 100%;
+       height: 50rem / @dx;
+       background-color: #d3079e;
+       .mi-1 {
+       float: left;
+         a{
+             color: #fff;
+         }
+       }
+       .mi-2{
+       float: right;
+        a{
+        color: #fff;
+        }
+       }
+   }
